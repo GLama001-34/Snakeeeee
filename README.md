@@ -13,15 +13,11 @@
 
 | **Key**             | **Action**             |
 | ------------------- | ---------------------- |
-| `W`                 | Move Forward           |
-| `S`                 | Move Backward          |
+| `W`                 | Move Up                |
+| `S`                 | Move Down              |
 | `A`                 | Turn Left              |
 | `D`                 | Turn Right             |
-| `P`                 | Pause/Unpause the game |
-| `Spacebar`          | Drop a depth charge    |
-| `Left Mouse Button` | Fire a bullet          |
-| `Mouse Movement`    | Aim the turret         |
-| `Esc`               | Exit pointer lock      |
+
 
 
 
