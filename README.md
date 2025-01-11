@@ -4,7 +4,7 @@
 <p align="center">
  
 <a href="https://www.codefactor.io/repository/github/glama001-34/snakeeeee"><img src="https://www.codefactor.io/repository/github/glama001-34/snakeeeee/badge" alt="CodeFactor" /></a>
-</p>
+<p align="center">
 
 
 
