@@ -1,8 +1,7 @@
 # Snake
 <p align="center">
-  <img width="500" src="https://cloud-fv42ar0uj-hack-club-bot.vercel.app/0mariner.png">
+
   <br>
-  <i>When the ocean itself becomes your battlefield</i>
   <br>
   <br>
     <a href="https://github.com/sapientabdullah/mariner/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT"></a>
