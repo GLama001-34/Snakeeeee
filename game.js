@@ -8,6 +8,7 @@ let food;
 let cellWidth = canvas.width / cols;
 let cellHeight = canvas.height / rows;
 let direction = 'LEFT';
+let lastDirection = '';
 let foodCollected = false;
 
 
@@ -92,21 +93,25 @@ function gameLoop() {
 
     shiftSnake();
 
-    if (direction == 'UP'){
-        snake[0].y--;
-    }
+    
 
-    if (direction == 'LEFT'){
-        snake[0].x--;
-    }
+        if (direction == 'UP'){
+            snake[0].y--;
+        }
 
-    if (direction == 'DOWN'){
-        snake[0].y++;
-    }
+        if (direction == 'LEFT'){
+            snake[0].x--;
+        }
 
-    if (direction == 'RIGHT'){
-        snake[0].x++;
-    }
+        if (direction == 'DOWN'){
+            snake[0].y++;
+        }
+
+        if (direction == 'RIGHT'){
+            snake[0].x++;
+        }
+   
+    lastDirection = direction;
 
     if(snake[0].x == food.x &&
         snake[0].y == food.y) {
@@ -118,6 +123,8 @@ function gameLoop() {
 }
 
 function keyDown(e) {
+
+    
     if (e.keyCode == 87) {
         direction = 'UP';
     }
@@ -130,5 +137,16 @@ function keyDown(e) {
     if (e.keyCode == 68) {
         direction = 'RIGHT';
     }
-}
+
+    if ((direction == 'UP' && lastDirection == 'DOWN') || 
+        (direction == 'DOWN' && lastDirection == 'UP') || 
+        (direction == 'LEFT' && lastDirection == 'RIGHT') || 
+        (direction == 'RIGHT' && lastDirection == 'LEFT')) {
+
+            direction = lastDirection;
+        }
+
+
+    }
+
 
